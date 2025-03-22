@@ -71,7 +71,8 @@
     "sweetalert2": "11.3.10",
     "sweetalert2-react-content": "^5.0.7",
     "swiper": "10.3.1",
-    "swr": "^2.2.5"
+    "swr": "^2.2.5",
+    "web3": "^4.16.0"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
