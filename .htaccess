@@ -1,0 +1,122 @@
+<IfModule mod_headers.c>
+Header set Access-Control-Allow-Origin "*"
+Header set Access-Control-Allow-Methods "GET, POST, OPTIONS, PUT, DELETE"
+Header set Access-Control-Allow-Headers "Origin, X-Requested-With, Content-Type, Accept, Authorization"
+Header set Access-Control-Max-Age "3600"
+</IfModule>
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+
+    #quiz-zone
+    RewriteRule ^quiz-zone$ /quiz-zone/index.html [L]
+    RewriteRule ^quiz-zone/sub-categories/([^/]+)/$ quiz-zone/sub-categories/[subcategories]/index.html [L]
+    RewriteRule ^quiz-zone/level/([^/]+)/$ quiz-zone/level/[level]/index.html [L]
+    RewriteRule ^quiz-zone/level/([^/]+)/dashboard-play/$ /quiz-zone/level/[level]/dashboard-play/index.html [L]
+    RewriteRule ^quiz-zone/result$ /quiz-zone/result/index.html [L]
+    RewriteRule ^quiz-zone/review-answer/$ quiz-zone/review-answer/index.html [L]
+
+    #fun-and-learn-quiz
+    RewriteRule ^fun-and-learn$ /fun-and-learn/index.html [L]
+    RewriteRule ^fun-and-learn/sub-categories/([^/]+)/$ fun-and-learn/sub-categories/[subcategories]/index.html [L]
+    RewriteRule ^fun-and-learn/fun-data/([^/]+)/$ fun-and-learn/fun-data/[data]/index.html [L]
+    RewriteRule ^fun-and-learn/fun-data/([^/]+)/fun-and-learn-play/$ fun-and-learn/fun-data/[data]/fun-and-learn-play/index.html [L]
+    RewriteRule ^fun-and-learn/result$ /fun-and-learn/result/index.html [L]
+    RewriteRule ^fun-and-learn/review-answer/$ fun-and-learn/review-answer/index.html [L]
+
+    #guess-the-word-quiz
+    RewriteRule ^guess-the-word$ /guess-the-word/index.html [L]
+    RewriteRule ^guess-the-word/guess-the-word-play$ guess-the-word/guess-the-word-play/index.html [L]
+    RewriteRule ^guess-the-word/subcategories/([^/]+)/$ guess-the-word/subcategories/[subcategories]/index.html [L]
+    RewriteRule ^guess-the-word/result$ /guess-the-word/result/index.html [L]
+    RewriteRule ^guess-the-word/review-answer/$ guess-the-word/review-answer/index.html [L]
+
+    #self-learning-quiz
+    RewriteRule ^self-learning$ /self-learning/index.html [L]
+    RewriteRule ^self-learning/sub-categories/([^/]+)/$ self-learning/sub-categories/[subcategories]/index.html [L]
+    RewriteRule ^self-learning/selection/([^/]+)/$ self-learning/selection/[selection]/index.html [L]
+    RewriteRule ^self-learning/self-learning-play$ /self-learning/self-learning-play/index.html [L]
+    RewriteRule ^self-learning/result$ /self-learning/result/index.html [L]
+    RewriteRule ^self-learning/review-answer/$ self-learning/review-answer/index.html [L]
+
+    #contest-play
+    RewriteRule ^contest-play$ /contest-play/index.html [L]
+    RewriteRule ^contest-play/contest-leaderboard$ contest-play/contest-leaderboard/index.html [L]
+    RewriteRule ^contest-play/contest-play-board$ contest-play/contest-play-board/index.html [L]
+    RewriteRule ^contest-play/result$ /contest-play/result/index.html [L]
+    RewriteRule ^contest-play/review-answer/$ contest-play/review-answer/index.html [L]
+
+    #random-battle
+    RewriteRule ^random-battle/$ /random-battle/index/index.html [L]
+    RewriteRule ^random-battle/play-with-friend-battle$ /random-battle/play-with-friend-battle/index.html [L]
+    RewriteRule ^random-battle/random-play$ /random-battle/random-play/index.html [L]
+    RewriteRule ^random-battle/random-play$ /random-battle/play-with-friend-play/index.html [L]
+    RewriteRule ^random-battle/result$ /random-battle/result/index.html [L]
+    RewriteRule ^random-battle/review-answer/$ random-battle/review-answer/index.html [L]
+
+    #group-battle
+    RewriteRule ^group-battle$ /group-battle/index.html [L]
+    RewriteRule ^group-battle/group-play$ /group-battle/group-play/index.html [L]
+    RewriteRule ^group-battle/result$ /group-battle/result/index.html [L]
+
+    #audio-quiz
+    RewriteRule ^audio-questions$ /audio-questions/index.html [L]
+    RewriteRule ^audio-questions/audio-questions-play/([^/]+)/$ audio-questions/audio-questions-play/index.html [L]
+    RewriteRule ^audio-questions/sub-categories/([^/]+)/$ audio-questions/sub-categories/[subcategories]/index.html [L]
+    RewriteRule ^audio-questions/result$ /audio-questions/result/index.html [L]
+    RewriteRule ^audio-questions/review-answer/$ audio-questions/review-answer/index.html [L]
+
+    #math-mania-quiz
+    RewriteRule ^math-mania$ /math-mania/index.html [L]
+    RewriteRule ^math-mania/math-mania-play$ math-mania/math-mania-play/index.html [L]
+    RewriteRule ^math-mania/sub-categories/([^/]+)/$ math-mania/sub-categories/[subcategories]/index.html [L]
+    RewriteRule ^math-mania/result$ /math-mania/result/index.html [L]
+    RewriteRule ^math-mania/review-answer/$ math-mania/review-answer/index.html [L]
+
+    #exam-quiz
+    RewriteRule ^exam-module$ /exam-module/index.html [L]
+    RewriteRule ^exam-module/exam-module-play$ /exam-module/exam-module-play/index.html [L]
+    RewriteRule ^exam-module/result$ /exam-module/result/index.html [L]
+    
+    #auth
+    RewriteRule ^auth/login$ /auth/login/index.html [L]       
+    RewriteRule ^auth/otp-verify$ /auth/otp-verify/index.html [L]
+    RewriteRule ^auth/reset-password$ /auth/reset-password/index.html [L]
+    RewriteRule ^auth/sign-up$ /auth/sign-up/index.html [L]
+
+    #static-pages
+    RewriteRule ^privacy-policy$ /privacy-policy/index.html [L]
+    RewriteRule ^contact-us$ /contact-us/index.html [L]
+    RewriteRule ^about-us$ /about-us/index.html [L]
+    RewriteRule ^instruction$ /instruction/index.html [L]
+    RewriteRule ^terms-conditions$ /terms-conditions/index.html [L]
+
+    #profile-pages
+    RewriteRule ^profile/badges$ /profile/badges/index.html [L]
+    RewriteRule ^profile/bookmark$ /profile/bookmark/index.html [L]
+    RewriteRule ^profile/coin-history$ /profile/coin-history/index.html [L]
+    RewriteRule ^profile/invite-friends$ /profile/invite-friends/index.html [L]
+    RewriteRule ^profile/statistics$ /profile/statistics/index.html [L]
+    RewriteRule ^profile/wallet$ /profile/wallet/index.html [L]
+    RewriteRule ^profile/leaderboard$ /profile/leaderaboard/index.html [L]
+
+    RewriteRule ^maintenance$ /maintenance/index.html [L]
+    RewriteRule ^loading$ /loading/index.html [L]
+    RewriteRule ^index$ /index.html [L]
+    RewriteRule ^home$ /home/index.html [L]
+    RewriteRule ^all-games$ /all-games/index.html [L]
+
+    #daily quiz
+    RewriteRule ^quiz-play/daily-quiz-dashboard$ /quiz-play/daily-quiz-dashboard/index.html [L]
+    RewriteRule ^quiz-play/daily-quiz-dashboard/result$ /quiz-play/daily-quiz-dashboard/result/index.html [L]
+    
+    #true-and-false quiz
+    RewriteRule ^quiz-play/true-and-false-play$ /quiz-play/true-and-false-play/index.html [L]
+    RewriteRule ^quiz-play/true-and-false-play/result$ /quiz-play/true-and-false-play/result/index.html [L]
+    RewriteRule ^quiz-play/true-and-false-play/review-answer$ /quiz-play/true-and-false-play/review-answer/index.html [L]
+   
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)$ /404.html [L]
+</IfModule>
