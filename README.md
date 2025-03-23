@@ -5,6 +5,44 @@
 
 ---
 
+## Presentation
+View our presentation to learn more:  
+[Brain Bank Presentation](https://www.canva.com/design/DAGicjjp3wI/CR9MAv1e7IqB2dRlCTNYXA/view?utm_content=DAGicjjp3wI&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h8a859b9962)
+
+---
+
+## Impact
+
+Brain Bank is designed to create a significant impact on both formal and informal audiences by addressing key challenges in education, career development, and skill acquisition. Here's how:
+
+### 1. **Innovative Learning**
+   - Brain Bank introduces gamified learning experiences that make education engaging and enjoyable.
+   - Users can learn at their own pace while earning rewards, fostering a culture of continuous learning.
+
+### 2. **Knowledge Proving**
+   - The platform allows users to validate their knowledge through quizzes and challenges.
+   - Skill points earned can be stored on the blockchain, providing verifiable credentials for career advancement.
+
+### 3. **Competitive Modes**
+   - Brain Bank offers competitive modes such as group battles, 1v1 challenges, and live contests.
+   - These modes encourage healthy competition, improve cognitive skills, and build confidence.
+
+### 4. **Career Watchman**
+   - AI-powered career insights help users stay updated on industry trends and emerging skills.
+   - Personalized recommendations guide users toward relevant career paths and opportunities.
+
+### 5. **Affordability**
+   - Brain Bank's low yearly subscription fee ensures accessibility for a wide range of users.
+   - This affordability makes it an inclusive platform for learners from diverse backgrounds.
+
+### 6. **Global Reach**
+   - The platform is designed to cater to both formal and informal audiences, including students, professionals, and lifelong learners.
+   - Its multilingual support and global accessibility make it a universal solution for skill development.
+
+By combining these features, Brain Bank aims to empower individuals, bridge skill gaps, and create a more knowledgeable and competitive global workforce.
+
+---
+
 ## Frontend
 
 ### Framework
